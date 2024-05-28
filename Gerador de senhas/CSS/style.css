@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    color: #333;
+}
+
+html, body{
+    height: auto;
+    min-height: 100vh;
+}
+
+html{
+    background: linear-gradient(180deg, #ea03ff 0%, #0097ff 98%);
+}
+
+input:focus{
+    outline: none;
+}
+
+/**/
+#container{
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.251) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.302) 0px 8px 16px -8px;
+}
+
+#register-banner{
+    background-image: url("../img/bg-form.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: saturation ;
+    width: 50%;
+}
+
+#register-layer{
+    background-color: #190b7ab3;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#register-layer h1{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    word-spacing: 50rem;
+}
+
+/**/
+#form-login{
+    background-color: #fdfdfd;
+    padding: 2rem;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+#form-login h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+#form-login p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+    font-size: .8rem;
+}
+
+.form-control{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.form-control input{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: .6rem 0;
+}
+
+#open-generate-pass{
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#open-generate-pass:hover{
+    color:#0097ff
+}
+
+#generated-password{
+    border: 1px solid #0097ff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .4rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: .6rem;
+    display: none;
+}
+
+#generated-password p{
+    color: #81d340;
+    margin-bottom: .5rem;
+}
+
+#form-login input[type ="submit"],
+#generation-options button,
+#copy-password{
+    background-color: #81d340;
+    color: #fff;
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: .4s;
+}
+
+#form-login input[type ="submit"]:hover{
+    opacity: 1;
+}
+
+/* Segunda versao */
+#generation-options{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+#generation-options .form-control{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#generation-options{
+    font-size: .8rem;
+}
+
+#generation-options input[type = "text"]{
+    max-width: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#generation-options button{
+    background-color: #0097ff;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+}
+
+#copy-password{
+    margin: 1rem auto;
+    background-color: transparent;
+    border: 2px solid #81d340;
+    color: #81d340;
+    padding: .5rem 1rem;
+}
+
+.hide{
+    display: none;
+}
